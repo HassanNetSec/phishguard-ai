@@ -1,0 +1,31 @@
+# ---------------------------------------------------------------- #
+# PROJECT STRUCTURE IGNORES
+# ---------------------------------------------------------------- #
+
+# 1. Backend Python Virtual Environment
+# Ignores the folder containing all installed Python packages (FastAPI dependencies)
+Backend/venv/
+
+# 2. Frontend Dependencies and Build Files (for Next.js/React)
+# Ignores the folder containing node packages (often large)
+Frontend/node_modules/
+# Ignores the production build output folders
+Frontend/.next/
+Frontend/out/
+
+# IMPORTANT: Frontend/public/ should NOT be ignored as it holds static assets
+
+# 3. Data and Sensitive Files
+# Ignores your dataset file, which should not be public
+phishing_websites.xlsx
+
+# ---------------------------------------------------------------- #
+# GENERAL OS / EDITOR IGNORES
+# ---------------------------------------------------------------- #
+
+# Mac OS X temporary files
+.DS_Store
+
+# IDE/Editor files (e.g., VS Code settings)
+.vscode/
+*.swp
